@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mailman — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Mailman mobile email app.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top-nav"><a href="index.html">&larr; Mailman</a></nav>
+<header class="page-head">
+  <h1>Mailman Privacy Policy</h1>
+  <p class="tagline">Last updated: October 2, 2026</p>
+</header>
+<main>
+
+<p>
+  Mailman ("the app") is a mobile email client developed and published by an
+  individual developer ("we," "us," or "the developer"), not a company. This
+  policy explains what data Mailman accesses, how it's used, and how it's stored.
+</p>
+
+<p>
+  The short version: <strong>Mailman has no backend server.</strong> Everything the
+  app does happens directly between your device, your email provider, and (only if
+  you choose to use AI features) the AI provider you personally configure. We never
+  see, collect, or have access to your email or its contents.
+</p>
+
+<h2>1. What data Mailman accesses</h2>
+<p>
+  When you connect an email account to Mailman, you sign in directly with your email
+  provider (e.g. Google) using that provider's own official sign-in flow. Mailman
+  never sees or stores your password. Depending on the provider, Mailman requests
+  permission to:
+</p>
+<ul>
+  <li>Read your messages, labels, and folders, so they can be displayed in the app.</li>
+  <li>Compose and send messages on your behalf, so you can reply and write new mail
+    from the app.</li>
+  <li>Move messages to Trash, so you can delete mail from the app (for Gmail, this
+    uses Gmail's own Trash — it is not a permanent, unrecoverable delete, and follows
+    Gmail's own retention rules).</li>
+  <li>Read your basic profile information (name and email address), so the app can
+    identify which account is connected.</li>
+</ul>
+<p>
+  For Gmail specifically, Mailman requests the <code>gmail.modify</code> scope (read,
+  compose, send, and move-to-trash) and basic <code>openid</code>/<code>email</code>
+  profile scopes. Mailman does not request permission to permanently and irrevocably
+  delete mail, bypassing Trash.
+</p>
+
+<h2>2. Where your data is stored</h2>
+<p>
+  All of your mail — message content, metadata, and attachments you open — is stored
+  <strong>only on your own device</strong>, in the app's local database and file
+  storage. Mailman does not operate a server, and your mail is never copied to, or
+  stored on, any infrastructure the developer controls.
+</p>
+<p>
+  Your email provider's authentication tokens are stored in your device's secure
+  OS-level keychain (Android Keystore / iOS Keychain), the same secure storage
+  mechanism used by banking and password-manager apps. They are never transmitted
+  anywhere except directly to your email provider, to keep your session signed in.
+</p>
+
+<h2>3. AI features: what happens when you use them</h2>
+<p>
+  Mailman lets you optionally configure an AI provider of your choosing to summarize
+  email threads and suggest to-do items. This is entirely opt-in and entirely under
+  your control:
+</p>
+<ul>
+  <li>If you don't configure an AI provider, no email content is ever sent anywhere
+    for AI processing.</li>
+  <li>If you configure a <strong>local AI provider</strong> (e.g. Ollama or LM Studio
+    running on your own computer), the content needed for that feature (e.g. a
+    thread's messages) is sent directly from your device to your own computer over
+    your local network. It never leaves your network.</li>
+  <li>If you configure a <strong>hosted AI provider</strong> (e.g. Anthropic, OpenAI,
+    xAI, or another API you connect using your own API key), the content needed for
+    that feature is sent directly from your device to that provider's API, using your
+    own credentials. That provider's own privacy policy and data-handling practices
+    govern what happens to that data once it reaches them — Mailman has no visibility
+    into or control over that.</li>
+</ul>
+<p>
+  In every case, this data is sent <strong>directly from your device</strong> to the
+  destination you configured. It is never routed through, or seen by, any server
+  operated by Mailman's developer, because no such server exists.
+</p>
+
+<h2>4. What Mailman does not do</h2>
+<ul>
+  <li>Mailman does not have a backend server, and does not collect, transmit, or
+    store your mail anywhere except on your own device.</li>
+  <li>Mailman does not sell your data, or any data, to anyone. There is nothing to
+    sell — we don't have it.</li>
+  <li>Mailman does not show ads and does not contain advertising or ad-tracking
+    SDKs.</li>
+  <li>Mailman does not use analytics or usage-tracking services.</li>
+  <li>Mailman does not share your data with third parties, except as described in
+    Section 3 (only when you explicitly configure and use an AI feature, sent only to
+    the provider you chose).</li>
+</ul>
+
+<h2>5. Data retention and deletion</h2>
+<p>Because all data lives only on your device:</p>
+<ul>
+  <li>Disconnecting an account inside Mailman removes that account's locally stored
+    mail and credentials from your device.</li>
+  <li>Uninstalling Mailman removes all of its locally stored data, including cached
+    mail and credentials, following your device operating system's normal
+    app-uninstall behavior.</li>
+  <li>Revoking Mailman's access from your email provider's own account security
+    settings (e.g. Google Account &rarr; Security &rarr; Third-party access)
+    immediately invalidates Mailman's ability to access that account, from the
+    provider's side.</li>
+</ul>
+
+<h2>6. Children's privacy</h2>
+<p>
+  Mailman is not directed at, or intended for use by, children, and we do not
+  knowingly collect data from children. Since Mailman has no backend server and
+  collects no data of its own in the first place, there is no data of any user —
+  child or otherwise — held by the developer.
+</p>
+
+<h2>7. Changes to this policy</h2>
+<p>
+  If this policy changes, the "Last updated" date above will be updated accordingly.
+  Since Mailman has no user accounts or contact mechanism of its own, continued use of
+  the app after a change constitutes acceptance of the updated policy.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+  Questions about this policy or the app's data practices can be sent to:
+  <code>obrienck@gmail.com</code>
+</p>
+
+<hr>
+<footer>
+  <p><a href="index.html">&larr; Back to Mailman</a></p>
+</footer>
+</main>
+</body>
+</html>

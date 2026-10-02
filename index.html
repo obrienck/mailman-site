@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mailman — bring-your-own-AI email client</title>
+<meta name="description" content="Mailman is a mobile email client that connects to your real mailbox and lets you use your own AI provider — local or hosted — to summarize mail and surface to-dos. No vendor lock-in, no backend server.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="page-head">
+  <h1>Mailman</h1>
+  <p class="tagline">A mobile email client. Your mailbox, your AI, your choice.</p>
+</header>
+<main>
+
+<p>
+  Mailman is a mobile email app for iOS and Android built around one idea:
+  <strong>you bring your own AI.</strong> Most email apps that offer "AI features"
+  route your mail through whichever AI vendor they picked for you. Mailman doesn't —
+  because it doesn't have one of its own.
+</p>
+
+<h2>What Mailman does</h2>
+<ul>
+  <li><strong>Connects to your real mailbox.</strong> Mailman currently supports Gmail,
+    using Google's own secure sign-in. Your mail is read directly from Google's servers
+    to your device — Mailman has no server of its own in between.</li>
+  <li><strong>Lets you read, organize, and compose mail</strong> from a clean mobile
+    interface: view your inbox, open and reply to threads, compose new messages, and
+    move messages you're done with to Trash.</li>
+  <li><strong>Summarizes threads and surfaces action items</strong> using an AI
+    provider that <em>you</em> configure and control — either a local model running on
+    your own computer (via Ollama or LM Studio), or a hosted provider you already have
+    an account with (Anthropic, OpenAI, xAI, or any OpenAI-compatible API), using your
+    own API key or your own local network address.</li>
+</ul>
+
+<p>
+  Email content is only ever sent to two places: your mail provider (Google, to
+  read/send/organize mail you ask it to) and, only if and when you turn on an AI
+  feature, the AI provider you personally configured. Full details are in the
+  <a href="privacy-policy.html">Privacy Policy</a>.
+</p>
+
+<h2>Who makes this</h2>
+<p>
+  Mailman is an independently developed app, built and maintained by a single
+  developer as a personal project. It is not affiliated with Google, Anthropic,
+  OpenAI, xAI, Ollama, or LM Studio — it simply lets you connect to services you
+  already use.
+</p>
+
+<hr>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a></p>
+  <p>Questions or feedback: <code>obrienck@gmail.com</code></p>
+</footer>
+</main>
+</body>
+</html>
